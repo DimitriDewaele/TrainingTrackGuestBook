@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Crazy Form Page</h1>
+
+        <h:form>
+            <h:panelGrid columns="2">
+                Name:
+            	<p:inputText value="#{crazyBean.name}" />
+                
+                Likes green:
+                <p:selectBooleanButton value="#{crazyBean.value}" onLabel="Yes" offLabel="No" />
+
+                Today's date:
+                <p:calendar value="#{crazyBean.date}" mode="inline" id="inlineCal"/>
+                
+                favourite number:
+                <h:panelGroup>
+                <p:inputText id="txt" value="#{crazyBean.number}" />
+                <p:slider for="txt" />
+                </h:panelGroup>
+
+                go for it
+                <p:commandButton value="Submit" update="CrazyForm" ajax="false" />
+                
+            </h:panelGrid>
+        </h:form>
+
+        <h:panelGrid columns="2">
+            Name:
+            <h:outputText value="#{crazyBean.name}"/>
+            
+            bool:
+            <h:outputText value="#{crazyBean.value}"/>
+            
+            today:
+            <h:outputText value="#{crazyBean.date}"/>
+            
+            favourite number:
+            <h:outputText value="#{crazyBean.number}"/>
+        </h:panelGrid>
+    </h:body>
+
+</html>
+
