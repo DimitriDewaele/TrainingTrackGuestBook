@@ -26,3 +26,16 @@ GuestBook application with:
 
  - Add JSF to the application (web.xml)
  - Add test page 
+
+### Part 3: Crazy form (v3.0.0)
+
+ - Add and primefaces page
+ - Add a crazy form
+
+### Part 4: jdbc connection (v4.0.0)
+
+ - Add a JPS page that connects to the database
+
+### Part 5: Connect with entity classes (v5.0.0)
+
+ 
