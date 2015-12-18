@@ -29,14 +29,14 @@ public class MessagesDao {
     }
     
     // Retrieves all the guests:
-    public Long getMaxId() {
-        TypedQuery<Long> query = em.createQuery(
-            "SELECT MAX(g.id) FROM Messages g", Long.class);
+    public Integer getMaxId() {
+        TypedQuery<Integer> query = em.createQuery(
+            "SELECT MAX(g.id) FROM Messages g", Integer.class);
         if (query.getResultList() != null && query.getResultList().size() > 0)
         {
             return query.getResultList().get(0);
         } else {
-            return 1L;
+            return 1;
         }
     }
 }
