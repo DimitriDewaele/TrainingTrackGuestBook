@@ -1,4 +1,4 @@
-package be.softwarelab.trainingtrackguestbook.servlet;
+package be.softwarelab.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
