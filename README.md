@@ -38,4 +38,10 @@ GuestBook application with:
 
 ### Part 5: Connect with entity classes (v5.0.0)
 
+### Part 6: Connect with entity classes (v6.0.0)
+
+### Part 7: Generate from entity classes (v7.0.0)
+
+
+
  
