@@ -21,4 +21,11 @@
     <welcome-file-list>
         <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>
+    
+        <!-- Resource references -->
+    <resource-ref>
+        <res-ref-name>jdbc/MessageDS</res-ref-name> 
+        <description>My Message Database Source</description>
+        <jndi-name>java:jboss/datasources/MessageDS</jndi-name>
+    </resource-ref>
 </web-app>
